@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Home page</title>
         <style>
             .container
             {
@@ -10,101 +9,354 @@
             }
             .header
             {
+                width: 100%;
+                height: 150px;
                 background-color: darkblue;
-                width: 100%;
+            }
+            
+            .logo{
+                float: left;
+                width: 10%;
                 height: 30%;
-                position: absolute;
-                top:0;
-                left:0;
-                padding-top: 10px;
-            }
-            .navbar
-            {
-                position: absolute;
-                background-color: white;
-                top: 180px;
-                left:0;
-                height: 10%;
-                width: 100%;
-            }
-            .mainbody
-            {
-                position: absolute;
-                top: 240px;
-                left: 0px;
-                background-color: gold;
-                width: 100%;
-                height: 70%;
-                padding: 10px;
-            }
-            .footer
-            {
-                position: fixed;
-                left: 0;
-                bottom: 0;
-                width: 100%;
-                background-color: darkslateblue;
-                color: white;
-                text-align: center;
-            }
-            .logo
-            {
-                padding-left: 120px;
-                width: 30%;
-                position: absolute;
+                padding-top: 40px;
+                margin-left: 70px;
+                
             }
             .title
             {
-                margin-left: 400px;
-                padding-top: 50px;
-                color: goldenrod;
-            }
-            .imagelogo
-            {
-                margin: 20px;
-                padding: 20px;
+                float: left;
+                width: 60%;
+                height: 30%;
                 
             }
-            .fontstyle
+            .logo1
             {
-                font-size: 30px;
-                font-family: Arial,Roboto;
-                font-weight: bold;
-                color: darkturquoise;
+                float: right;
+                width: 20%;
+                height: 30%;
+                
+                margin-right: 20px;
+                margin-top: 0px;
+                
             }
-            ul{
-                padding-left: 140px;
+            .font
+            {
+                color: gold;
+                font-size: 20px;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
             }
-            ul li{
+            .font1
+            {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                text-align: center;
+                color: gold;
+            }
+            .navbar
+            {
+                padding-left: 50px;
+                background-color: white;
+                border: 5px white;
+                left:0;
+                height:5%;
+                width: 100%;
+                position: absolute;
+            }
+            .body
+            {
+                width: 100%;
+            }
+            .c1
+            {
                 float: left;
-                list-style: none;
-                padding: 10px;
+                width: 400px;
+                height: 1000px;
+                border: 3px white;
+                background-color: turquoise;
+                margin-left: 40px;
+                
+            }
+            .c2
+            {
+                float: right;
+                width:600px;
+                height: 500px;
+                border:3px white;
+                margin-right: 200px;
+                margin-top: 0px;
+                background-color: whitesmoke;
+                
+
+            }
+            .c3
+            {
+                float: right;
+                width:600px;
+                height: 600px;
+                border:3px white;
+                margin-right: 200px;
+                margin-top: 0px;
+                background-color: white;
+                 
+            }
+            .c21
+            {
+                float: left;
+                width: 300px;
+                height: 400px; 
+            }
+            .c22
+            {
+                float: left;
+                width: 300px;
+                height: 250px;
+            }
+            .c23
+            {
+                float: right;
+                width: 300px;
+                height: 150px; 
+                background-color: turquoise;
+            }
+            .c31
+            {
+                float: left;
+                width: 150px;
+                height: 40px; 
+                
+            }
+            .c32
+            {
+                float: left;
+                width: 150px;
+                height: 40px; 
+                
+            }
+            .c33
+            {
+                float: left;
+                width: 450px;
+                height: 42px; 
+                
+            }
+            .c34
+            {
+                float: left;
+                width: 450px;
+                height: 42px;
+                
+            }
+            .c4{
+                float: left;
+                width: 400px;
+                height: 100px;
+                border: 3px white;
+                background-color: white;
+                margin-left: 40px;
+                font-weight: bold;
+                
+                
+
+            }
+            
+            .ujim
+            {
+                float: left;
+                width: 100%;
+                height: 60px; 
+                background-color: darkblue;
+                text-align: center;
+                font-weight: bold;
+                
+            }
+           
+            .pbody
+            {
+                padding-left: 30px;
+                background-color: white;
+                border: 5 px white;
+                left:0;
+                height: 6%;
+                width:90%;
+            }
+            .fp
+            {
+                color: darkblue;
+                font-size: 25px;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif; 
+            }
+            .fp1
+            {
+                color: darkblue;
+                font-size:15px;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .f
+            {
+                font-size: 15px;
+                font-family: Arial,Roboto;
+                
+                color: blue;
+                padding-left: 10px;
+            }
+            .f1{
+                font-size: 15px;
+                font-family: Arial,Roboto;
+                
+                color: red;
+                padding-left: 10px;
             }
         </style>
     </head>
     <body>
         <div class="container">
             <div class="header">
-                <div class="logo"><img src="logopic.jpg.jpg" width="200px"  padding-top="20px" class="imagelogo"></div>
-                <div class="title"><h2 class="fontstyle">University Journal of IC in Multidisciplinary Issue on Arts & Science,</h2>><br><h3 class="fontstyle" >Engineering, Economics and Education (Volume-1)</h3></div>
-                <div class="logo"><img src="journal.png.png" width="200px" padding-top="20px" padding-left="80px"></div>
+                <div class="logo"><img src="logopic.jpg.jpg"  width="150" height="100"></div>
+                <div class="title" ><h4 class="font">University Journal of IC in Multidisciplinary Issue on Arts & Science,</h4></div>
+                <div class="title"><h5 class="font1">Engineering, Economics and Education ( Voiume-1)</h5></div>
+                <div class="logo1"><img src="journal.png.png" width="200" height="100"></div>
+            </div>
+            <div class="navbar">
+                
+                    Home &nbsp;&nbsp;&nbsp;
+                    Topics &nbsp; &nbsp; &nbsp;
+                    Call for Papers &nbsp; &nbsp; &nbsp;
+                    Editorial Board &nbsp; &nbsp;&nbsp;
+                    Download Session &nbsp;&nbsp; &nbsp;
+                    <a href="contact.html">Contact Us</a>
+            </div>
+            <div>
+                <img src="home.jfif.jfif" width="100%" height="6%">
+            </div>
+            <div class="pbody"><h4 class="fp">"ICT in Multidisciplinary"</h4>
+            </div>
+            <div class="pbody"><h5 class="fp1">Foster to explore the new contributions of the heterogeneous subjects engaged with ICT, as 
+                consequences motivate researchers around the universities to come out new reserch ideas on their professional.
+            </h5></div>
+            <div class="c1">
+               <h5 class="f1">Area of Interest</h5>
+               <h5 class="f">Computer Science and Technology</h5>
+               <ul>
+                <li>Natural Language Processing</li>
+                <li>Parallel Distributed Computing</li>
+                <li>Artificial Intelligence</li>
+                <li>Cloud Computing</li>
+                <li>Data Science</li>
+                <li>Image and Digital Signal Processing</li>
+                <li>Software Engineering and web Engineering</li>
+                <li>Database Management System and Information Retrieval</li>
+                <li>Embedded System and Internet of Things (IOT)</li>
+                <li>Networking and Security</li></ul>
 
->
-             </div>
-             <div class="navbar">
-                 <ul>
-                     <li>Home</li>
-                     <li>About</li>
-                     <li>Courses</li>
-                     <li>Contact Us</li>
-                 </ul>
-             </div>
-             <div class="mainbody">
-                 <p> You are going to hear an interview with Christopher West, The Managing Director of a company called Angleside.Before you listen, look at the newspaper heading line below.</p>
-             </div>
-             <div class="footer">Copyright
-                 
-             </div>
+                    <h5 class="f">Arts & Sciences</h5>
+                <ul>
+                    <li>Maths</li>
+                    <li>Statistical & Mathematical Computing</li>
+                    <li>Engineering Maths</li>
+                    <li>Environmental Studies</li>
+                    <li>Geography related with ICT</li>
+                    <li>Applied Science</li>
+                    <li>Physics</li>
+                    <li>Natural Science</li>
+                    <li>Engineering Physics</li>
+                    <li>Myanmar Language (Written in English)</li>
+                    <li>English Language Learning and Teaching</li>
+                </ul>
+                <h5 class="f">International Relations</h5>
+                <ul>
+                    <li>International Relations</li>
+                    <li>International Relations related in ICT</li>
+                </ul>
+                <h5 class="f">Laws related in ICT</h5>
+                <ul>
+                    <li>Intellectual Property</li>
+                </ul>
+                <h5 class="f">Engineering</h5>
+                <ul>
+                    <li>
+                        Electronic and Electrical Engineering
+                    </li>
+                    <li>Electrical Power</li>
+                    <li>Information Technology</li>
+                    <li>Chemical Engineering</li>
+                </ul>
+               
+               <h5 class="f">Economics <br>Education</h5>
+            
+            </div>
+            <div class="c2">
+                <h5 class="f">Editorial Chair <br>Dr . Yuzana </h5>
+                <div class="c21">
+                    Editorial Board <br>
+                    Thitinan Pongsudhirank <br>
+                    Dr. Kenki Adachi <br>
+                    Dr. Supavadee Aramvith <br>
+                    Dr. Zaw Zaw Aung <br>
+                    Dr. Marlar <br>
+                    Dr. Nilar Myint Htoo <br>
+                    Dr. Thidar <br>
+                    Dr. Nilar Aung
+                    Dr. Ye Kyaw Thu <br>
+                    Dr. Soe Moe Tun <br>
+                    Dr. Kay Thwe Hlaing <br>
+                    Dr. Moe Thandar Kyi <br>
+                    Dr.Win Zaw<br>
+                    Dr. Yin Myo Thu
+                </div>
+                <div class="c22">
+                    Dr. Soe Soe Aye<br>
+                    Dr. Tin Zaw Thaw<br>
+                    Dr. Hlaing Htake Khaung Tin<br>
+                    Dr. Thet Mar Tun<br>
+                    Dr. Naw Wai Wai Sin<br>
+                    Daw Myo Myo Khin<br>
+                    Daw Nyunt Nyunt Htwe<br>
+                    Daw Nu Nu Win
+                </div>
+                <div class="c23">
+                    <div class="c33">
+                        Contact Person
+                    </div>
+                    <div class="c31">
+                        Dr. Yuzana<br>
+                        09-794065357
+                    </div>
+                    <div class="c32">
+                        Dr. Tin Zar Thaw<br>
+                        09- 421037973
+                    </div>
+                    <div class="c34">
+                        Contact mail : journal@ucsh.edu.mm
+                    </div>
+                    
+               </div>
+            </div>
+            <div class="c3">
+                <h3 style="color: tomato;">SUBMISSION OF PAPERS</h3>
+                    <p>&nbsp; &nbsp; &nbsp; Authors are invited to submit the RESEARCH paper about 6 pages in Microsoft Word file formula as attached all manuscripts will be peer-reviewed by the Technical Program Committee and Editorial Board.
+                         The paper must submit your paper through <b>email: journal@ucsh.edu.mm</b>
+                         Template of paper can be download from the site:<b> ujim-ucsh.org</b></p>
+                         <h3 style="color: tomato;">IMPORTANT DATES </h>
+                <p style="font-weight: bold;color: black;">Deadline: 9 May 2020<br>Revised: 27 May 2020<br>Deadline for Camera Ready: 29 May 2020 </p> 
+                <h3 style="color: tomato;">REGISTRATION FEES</h3>
+                <p style="color: red;">Last Date of Registration: 6 June 2020</p>
+                <p style="color: black;font-weight: bold;">Registration Fees: 20000 Kyats<br> Account: KBZ Bank Account No. 01830201800911901<br>
+                    All Accepted paper will be published and UJIM proceedings will be provided for each author. </p>
+                <p>For paper template, Click here (.docx) and (.pdf)<br>
+                    For copyright agreement, Click here (.docx) and (.pdf)<br>
+                    For ERC recommendation, Click here (.docx) and (.pdf)<br>
+                    For rector recommendation, Click here (.docx) and (.pdf)<br>
+                    For admission,Click here (.docx) and (.pdf) </p>    
+
+            </div>
+            <div class="c4">
+                <h1 style="color: black; font-weight: bold;">Download Session</h1>
+            </div>
+            <div class="ujim"><p style="padding-top: 10px; color: gold;">© UJIM - 2020</p> </div>
         </div>
     </body>
 </html>
+        
