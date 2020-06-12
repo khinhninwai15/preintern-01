@@ -1,46 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
- <script type='text/javascript' src='http://code.jquery.com/jquery.min.js'></script>
- <script type='text/javascript'>
-    document.addEventListener('DOMContentLoaded', () => {
-
-            document.querySelector('#todo-list').onsubmit = () => {
-
-                const li = document.createElement('li');
-                li.innerHTML = document.querySelector('#searchInput').value;
-
-                document.querySelector('#list').append(li);
-
-                document.querySelector('#searchInput').value = '';
-
-                return false;
-            };
-
-        });
-    </script>
-        <script type='text/javascript'>
+        <title> Assignment</title>
+        <script>
             
-            $(function () {
-                $('#searchInput').keyup( function(){
-                    if ($(this).val() == '') {                        
-                        $('.enableOnInput').prop('disabled', true);
-                    } else {
-                        $('.enableOnInput').prop('disabled', false);
+                document.addEventListener('DOMContentLoaded',() => {
+                    document.querySelector('#todo-list').onsubmit = () => {
+                        const li = document.createElement('li');
+                        li.innerHTML = document.querySelector('#task').value;
+
+                        document.querySelector('#list').append(li);
+
+                        document.querySelector('#task').value = ' ';
+
+                        return false;
                     }
                 });
-            }); 
-        </script>  
+        </script>
     </head>
-    <body>
+    <body onload="submit.disabled = true">
         <h1>To Do List</h1>
-        <ul id="list">
+        <ul id="list">   
         </ul>
-            <form id="todo-list">
-                <input type='text' name='serchQuery' id='serchInput'/>
-                <input type='submit' name='submit' id='submitBtn' class='enableOnInput' disabled='disabled' />
-            </form>
-        </div>
-    </div>
+        <form id="todo-list">
+            <input id="task" type="text" onkeyup="if(this.value.length > 0) document.getElementById('start_button').disabled = false; else document.getElementById('start_button').disabled = true;"/>
+            <input type="submit" name="submit" id="start_button" disabled="disabled">
+        </form>
     </body>
 </html>
